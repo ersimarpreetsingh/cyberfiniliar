@@ -1,0 +1,104 @@
+.view-art {
+    background: #f8eabb;
+    padding: 50px;
+    @media (min-width: 768px) {
+        padding: 150px;
+    }
+}
+
+.artmeta-container {
+    background: #ffe1e3;
+    padding: 40px 0;
+    @media (min-width: 768px) {
+        padding: 40px;
+    }
+    h2 {
+        color: #000;
+        font: 700 42px/1 "Maven Pro", sans-serif;
+        margin: 0;
+        text-transform: uppercase;
+        @media (min-width: 768px) {
+            font-size: 64px;
+        }
+    }
+    .link-meta {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        @media (min-width: 768px) {
+            margin-top: 150px;
+        }
+        ul {
+            li {
+                color: #000;
+                font: 18px/1 "Maven Pro", sans-serif;
+                margin-top: 20px;
+                .icon {
+                    margin-right: 15px;
+                }
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .bidding-meta {
+        h2 {
+            color: #000;
+            font: 30px/1 "Maven Pro", sans-serif;
+            margin-bottom: 20px;
+        }
+        .art-metabox {
+            margin-bottom: 40px;
+        }
+        .bid-box {
+            position: relative;
+            margin-top: 20px;
+            .bidder {
+                margin-right: 15px;
+                color: #000;
+                font: 18px "Maven Pro", sans-serif;
+                @media (min-width: 768px) {
+                    margin-right: 60px;
+                    font-size: 26px;
+                }
+                span {
+                    color: #737B7F;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    @media (min-width: 768px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .at {
+                @extend .bidder;
+                margin: 0;
+            }
+            .circle {
+                border: 1px solid #000;
+                border-radius: 50%;
+                display: block;
+                height: 24px;
+                margin-right: 20px;
+                width: 24px;
+                @media (min-width: 768px) {
+                    height: 40px;
+                    width: 40px;
+                }
+                &.pink {
+                    background: #edb9d5;
+                }
+                &.blue {
+                    background: #cad2eb;
+                }
+                &.yellow {
+                    background: #f4f2c9;
+                }
+                &.green {
+                    background: #9bd1a2;
+                }
+            }
+        }
+    }
+}

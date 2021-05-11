@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+
+.art-metabox {
+    margin-top: 40px;
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+    .bid {
+        margin-top: 40px;
+        .meta {
+            margin-top: 25px;
+            @media (min-width: 768px) {
+                margin-right: 80px;
+                margin-top: 0;
+            }
+            h3 {
+                color: #000;
+                font: 500 18px 'Maven Pro', sans-serif;
+            }
+            .price {
+                color: #000;
+                font: 700 24px 'Maven Pro', sans-serif;
+            }
+            h5 {
+                color: #000;
+                font: 15px 'Maven Pro', sans-serif;
+            }
+            .time {
+                margin-bottom: 0.5rem;
+                li {
+                    @extend .price;
+                    margin-right: 25px;
+                    text-align: center;
+                    span {
+                        font: 15px 'Maven Pro', sans-serif;
+                        margin-top: 0.5rem;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .cta-row {
+        margin-top: 25px;
+        .cta {
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 15px;
+            color: #000;
+            display: inline-flex;
+            font: 22px/1 "Maven Pro", sans-serif;
+            justify-content: center;
+            min-width: 200px;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            @media (min-width: 768px) {
+                min-width: none;
+            }
+            &.black {
+                background: #000;
+                color: #fff;
+                margin-bottom: 20px;
+                @media (min-width: 768px) {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    margin-bottom: 0;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
+
+.artmeta-container {
+    +app-footer {
+        .footer {
+            background: #A2DAE3;
+        }
+    }
+}

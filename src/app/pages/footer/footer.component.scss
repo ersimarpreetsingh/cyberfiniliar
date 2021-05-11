@@ -11,8 +11,11 @@
     h2 {
         color: #000;
         font: 20px "Maven Pro", sans-serif;
-        margin: 0;
+        margin: 30px 0px 0 0;
         text-align: right;
+        @media (min-width: 768px) {
+            margin: 40px 80px 0 0;
+        }
     }
     hr {
         margin: 60px 0;
@@ -23,7 +26,8 @@
         ul {
             margin-left: -30px;
             li {
-                color: #72585b;
+                color: rgba(#000, 0.7);
+                font: 14px "Maven Pro", sans-serif;
                 margin-left: 30px;
                 a {
                     color: inherit;

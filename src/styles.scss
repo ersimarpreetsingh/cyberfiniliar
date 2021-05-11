@@ -60,7 +60,7 @@
             text-align: center;
             text-decoration: none;
             @media (min-width: 768px) {
-                min-width: none;
+                min-width: 1px;
             }
             &.black {
                 background: #000;
@@ -71,6 +71,10 @@
                     padding-right: 70px;
                     margin-bottom: 0;
                     margin-right: 25px;
+                }
+                @media (min-width: 1200px) {
+                    padding-left: 85px;
+                    padding-right: 85px;
                 }
             }
         }

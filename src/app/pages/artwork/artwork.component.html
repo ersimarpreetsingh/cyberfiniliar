@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md">
                 <h2>ETHEREUM</h2>
-                <div class="link-meta">
+                <div class="link-meta d-none d-lg-block">
                     <ul class="list-unstyled">
                         <li><a href="#" class="align-items-center d-inline-flex"><span class="icon"><img src="/assets/images/etherscan-logo.png" alt="" height="30" width="30"></span>View on Etherscan</a></li>
                         <li><a href="#" class="align-items-center d-inline-flex"><span class="icon"><img src="/assets/images/gif-logo.png" alt="" height="30" width="30"></span>Generate Gif</a></li>
@@ -15,10 +15,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md flex-md-grow-0">
+            <div class="col-lg flex-xl-grow-0">
                 <div class="bidding-meta">
-                    <h2>HIGHEST BID</h2>
-                    <div class="bid-box d-flex">
+                    <h2 class=" d-none d-lg-block">HIGHEST BID</h2>
+                    <div class="bid-box d-none d-lg-flex">
                         <span class="circle green"></span>
                         <div class="bidder">@bigB <span class="d-block">6th July 2021 @ 7:20pm</span></div>
                     </div>
@@ -27,41 +27,68 @@
                             <div class="meta">
                                 <h3>Current Bid</h3>
                                 <h4 class="price">299.43 ETH</h4>
-                                <h5>$1000000.23</h5>
+                                <h5 class="d-none d-md-block">$1000000.23</h5>
                             </div>
                             <div class="meta">
-                                <h3>Auction ending in</h3>
-                                <ul class="list-unstyled nav time">
-                                    <li class="hours">223<span class="d-block">Hours</span></li>
-                                    <li class="minute">43<span class="d-block">Minutes</span></li>
-                                    <li class="second">02<span class="d-block">Seconds</span></li>
+                                <h3><span class="d-md-inline-block d-none">Auction e</span><span class="d-md-none">E</span>nding in</h3>
+                                <ul class="flex-nowrap flex-xl-nowrap list-unstyled nav time">
+                                    <li class="hours">223<span class="d-md-none">h</span><span class="d-none d-md-block">Hours</span></li>
+                                    <li class="minute">43<span class="d-md-none">m</span><span class="d-none d-md-block">Minutes</span></li>
+                                    <li class="second">02<span class="d-md-none">s</span><span class="d-none d-md-block">Seconds</span></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="cta-row">
                             <a href="#" class="cta black">Place a bid</a>
-                            <a href="artwork" class="cta white">View artwork</a>
                         </div>
                     </div>
-                    <h2>BID HISTORY</h2>
-                    <div class="bid-box d-flex">
-                        <span class="circle pink"></span>
-                        <div class="bidder">@ctpie <span class="d-block">6th July 2021 @ 7:20pm</span></div>
-                        <div class="at">120.34 ETH</div>
+                    <div class="link-meta d-lg-none">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="align-items-center d-inline-flex"><span class="icon"><img src="/assets/images/etherscan-logo.png" alt="" height="30" width="30"></span>View on Etherscan</a></li>
+                            <li><a href="#" class="align-items-center d-inline-flex"><span class="icon"><img src="/assets/images/gif-logo.png" alt="" height="30" width="30"></span>Generate Gif</a></li>
+                            <li><a href="#" class="align-items-center d-inline-flex"><span class="icon"><img src="/assets/images/cube-logo.png" alt="" height="30" width="30"></span>View IPFS Metadata</a></li>
+                            <li><a href="#" class="align-items-center d-inline-flex"><span class="icon"><img src="/assets/images/code-logo.png" alt="" height="30" width="30"></span>Embed Finiliar</a></li>
+                        </ul>
                     </div>
-                    <div class="bid-box d-flex">
-                        <span class="circle blue"></span>
-                        <div class="bidder">@kilp <span class="d-block">4th July 2021 @ 5:50pm</span></div>
-                        <div class="at">90.34 ETH</div>
-                    </div>
-                    <div class="bid-box d-flex">
-                        <span class="circle yellow"></span>
-                        <div class="bidder">@catman <span class="d-block">4th July 2021 @ 3:30pm</span></div>
-                        <div class="at">60.34 ETH</div>
+                    <div class="d-none d-lg-block">
+                        <h2>BID HISTORY</h2>
+                        <div class="bid-box d-flex">
+                            <span class="circle pink"></span>
+                            <div class="bidder">@ctpie <span class="d-block">6th July 2021 @ 7:20pm</span></div>
+                            <div class="at">120.34 ETH</div>
+                        </div>
+                        <div class="bid-box d-flex">
+                            <span class="circle blue"></span>
+                            <div class="bidder">@kilp <span class="d-block">4th July 2021 @ 5:50pm</span></div>
+                            <div class="at">90.34 ETH</div>
+                        </div>
+                        <div class="bid-box d-flex">
+                            <span class="circle yellow"></span>
+                            <div class="bidder">@catman <span class="d-block">4th July 2021 @ 3:30pm</span></div>
+                            <div class="at">60.34 ETH</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<section class="bid-container d-lg-none">
+    <h2>BID HISTORY</h2>
+    <div class="bid-box d-flex">
+        <span class="circle pink"></span>
+        <div class="bidder">@ctpie <span class="d-block">6th July 2021 @ 7:20pm</span></div>
+        <div class="at">120.34 ETH</div>
+    </div>
+    <div class="bid-box d-flex">
+        <span class="circle blue"></span>
+        <div class="bidder">@kilp <span class="d-block">4th July 2021 @ 5:50pm</span></div>
+        <div class="at">90.34 ETH</div>
+    </div>
+    <div class="bid-box d-flex">
+        <span class="circle yellow"></span>
+        <div class="bidder">@catman <span class="d-block">4th July 2021 @ 3:30pm</span></div>
+        <div class="at">60.34 ETH</div>
     </div>
 </section>
 <app-footer></app-footer>

@@ -7,14 +7,20 @@
 
 h2 {
     color: #F4F7BC;
-    font: 500 30px 'Maven Pro', sans-serif;
+    font: 16px 'Myriad-Pro', sans-serif;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 p {
     color: #F4F7BC;
-    font: 20px 'Maven Pro', sans-serif;
+    font: 12px 'Myriad-Pro', sans-serif;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
     +h2 {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 
@@ -48,23 +54,9 @@ p {
 .home {
     a.contact-cta {
         position: absolute;
-        right: 20px;
-        top: 20px;
-        background: #000;
-        border: 1px solid #000;
-        border-radius: 15px;
-        color: #fff;
-        display: inline-flex;
-        font: 18px/1 "Maven Pro", sans-serif;
-        justify-content: center;
-        min-width: 200px;
-        padding: 15px 25px;
-        text-align: center;
-        text-decoration: none;
+        right: 15px;
+        top: 15px;
         @media (min-width: 768px) {
-            font-size: 22px;
-            padding-left: 70px;
-            padding-right: 70px;
             right: 40px;
             top: 40px;
         }
@@ -103,11 +95,14 @@ p {
     }
     h2 {
         color: #000;
-        font: 700 42px/1 'Maven Pro', sans-serif;
+        font: bold 20px/1 "Myriad-Pro", sans-serif;
         margin: 0;
         text-transform: uppercase;
         @media (min-width: 768px) {
-            font-size: 64px;
+            font-size: 56px;
+        }
+        @media (min-width: 1025px) {
+            font-size: 70px;
         }
     }
     &.burlywood {

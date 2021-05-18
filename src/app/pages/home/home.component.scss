@@ -7,17 +7,15 @@
 
 h2 {
     color: #F4F7BC;
-    font: 16px 'Myriad-Pro', sans-serif;
-    @media (min-width: 768px) {
-        font-size: 20px;
-    }
+    font: 32px 'Myriad-Pro', sans-serif;
 }
 
 p {
     color: #F4F7BC;
-    font: 12px 'Myriad-Pro', sans-serif;
+    font: 16px 'Myriad-Pro', sans-serif;
+    margin: 30px 0 0 0;
     @media (min-width: 768px) {
-        font-size: 16px;
+        font-size: 19px;
     }
     +h2 {
         margin-top: 30px;
@@ -37,8 +35,10 @@ p {
         top: 0;
         width: 100%;
         z-index: -1;
-        &.fix {
-            background-attachment: fixed;
+        @media (min-width: 768px) {
+            &.fix {
+                background-attachment: fixed;
+            }
         }
     }
     h2,
@@ -54,6 +54,7 @@ p {
 .home {
     a.contact-cta {
         position: absolute;
+        margin-right: 0;
         right: 15px;
         top: 15px;
         @media (min-width: 768px) {

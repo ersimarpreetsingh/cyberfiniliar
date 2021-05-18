@@ -53,6 +53,9 @@ $path: 'assets/fonts';
             padding-right: 85px;
         }
     }
+    &.none {
+        background: none;
+    }
 }
 
 .art-metabox {
